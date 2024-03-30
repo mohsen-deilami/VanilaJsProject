@@ -1,0 +1,87 @@
+.landing{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('/images/background_landing.jfif') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: var(--white-color);
+    padding: 9rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+
+.landing__title{
+    font-size: 3.4rem;
+  font-weight: bold;
+}
+.landing__subtitle{
+    font-size: 1.8rem;
+    margin-top: 0.3rem;
+    
+}
+.landing__searchbar{
+    width: 700px;
+    position: relative;
+    margin: 3.5rem auto;
+}
+.landing__searchbar-input {
+    width: 100%;
+    padding: 1.4rem 1rem 1.4rem 7rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+  }
+.landing__searchbar-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0.5rem;
+    width: 5rem;
+    top: 0.4rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+
+.landing__searchbar-icon{
+    color: var(--white-color);
+    font-size: 2.2rem;
+    transition: all 400ms ease;
+}
+.landing__searchbar-icon:hover{
+    color: #1e83f0;
+
+}
+.landing__searchbar-text{
+    padding: 1.5rem;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.landing-status{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.landing-status__item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--white-color);
+
+}
+.landing-status__item svg {
+    fill: var(--white-color);
+  }
+.landing-status-count{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+.landing-status-text{
+    font-weight: bold;
+    
+}

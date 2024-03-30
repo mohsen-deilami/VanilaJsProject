@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="./../../vendor/FontAwesome5/all.min.css">
+    <link rel="stylesheet" href="./../../vendor/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./../style/style.css">
+   
+</head>
+
+<body>
+    <div id="content">
+        <div id="sidebar" class="col-2">
+          
+        </div>
+        <div id="home" class="col-10">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="home-header">
+                        <div class="home-right">       
+                            <div class="home-notification-modal">
+                                <ul class="home-notification-modal-list">
+                                 
+                                
+                                </ul>
+                            </div>  
+                          
+                            <div class="home-searchbar">
+                                <input type="text" class="search-bar" placeholder="Search...">
+                            </div>
+                            <div class="home-notification">
+                                <button type="button" id="notification-icon">
+                                    <i class="far fa-bell"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="home-left">
+                            <div class="home-profile">
+                                <div class="home-profile-image">
+                                    <a href="#">
+                                        <img  class="profile__img" alt="">
+                                    </a>
+                                </div>
+                                <div class="home-profile-name">
+                                    <a href="#" id="admin-name">  </a>
+                                </div>
+                                <div class="home-profile-icon">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="home-content">
+                <div class="container">
+                    <div class="home-content-edit active-edit-modal">
+                    <div class="home-title">
+                        <span>Add new Category  </span>
+                    </div>
+                    <form class="form">
+                        <div class="col-6">
+                            <div class="name input">
+                                <label class="input-title ">Title</label>
+                                <input type="text" isValid="false" class="category-name" placeholder="Please enter name...">
+                                <span class="error-message text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="name input">
+                                <label class="input-title ">Title</label>
+                                <input type="text" isValid="false" class="category-title" placeholder="Please enter title...">
+                                <span class="error-message text-danger"></span>
+                            </div>
+                        </div>
+                       
+                        <div class="col-12">
+                            <div class="bottom-form">
+
+                                <div class="submit-btn">
+                                    <input type="submit" class="btn btn-primary" value="Create category">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                    <div class="home-content-latset-users">
+                        <div class="home-content-users-title">
+                            <span class="list-signup">List <span class="signup">Category</span></span>
+                       
+                        </div>
+                        <div class="home-content-users-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>ID  </th>
+                                        <th>Category Title </th>
+                                        <th>Cattegory Name  </th>
+                                      
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="list-category">
+                                  <!--  list category -->
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./../../vendor/FontAwesome5/all.min.js"></script>
+    <script src="./../../js/panel/sheared.js" type="module"></script>
+    <script src="./../../vendor/swalLocal/swal.js"></script>
+    <script src="./../../js/panel/category.js" type="module"></script>
+   
+</body>
+
+</html>

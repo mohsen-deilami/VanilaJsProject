@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session</title>
+    <link rel="stylesheet" href="./../../vendor/FontAwesome5/all.min.css">
+    <link rel="stylesheet" href="./../../vendor/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./../style/style.css">
+  
+</head>
+
+<body>
+    <div id="content">
+        <div id="sidebar" class="col-2">
+          
+        </div>
+        <div id="home" class="col-10">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="home-header">
+                        <div class="home-right">       
+                            <div class="home-notification-modal">
+                                <ul class="home-notification-modal-list">
+                                 
+                                
+                                </ul>
+                            </div>  
+                          
+                            <div class="home-searchbar">
+                                <input type="text" class="search-bar" placeholder="Search...">
+                            </div>
+                            <div class="home-notification">
+                                <button type="button" id="notification-icon">
+                                    <i class="far fa-bell"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="home-left">
+                            <div class="home-profile">
+                                <div class="home-profile-image">
+                                    <a href="#">
+                                        <img  class="profile__img" alt="">
+                                    </a>
+                                </div>
+                                <div class="home-profile-name">
+                                    <a href="#" id="admin-name">  </a>
+                                </div>
+                                <div class="home-profile-icon">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="home-content">
+                <div class="container">
+               
+                    <div class="home-content-edit active-edit-modal">
+                        <div class="home-title">
+                            <span>Add new Session  </span>
+                        </div>
+                        <form class="form">
+                            <div class="col-6">
+                                <div class="name input">
+                                    <label class="input-title" >Session Title</label>
+                                    <input type="text" isValid="false" id="title" placeholder="Please enter session title...">
+                                    <span class="error-message text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="family input">
+                                    <label class="input-title" > Time </label>
+                                    <input type="text" isValid="false" id="time"
+                                        placeholder="Please enter time...">
+                                    <span class="error-message text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="family input">
+                                <div class="file video-select">
+                                    <label class="input-title">Video Sesseion </label>
+                                    <input type="file" id="video-file">
+                                </div>
+                                </div>
+                            </div>
+
+                             <div class="col-6">
+                          <div class="name input">
+                       
+                                <label class="input-title select__title"> Select free </label>
+
+                                <select class="name  selectFree" id="select-free" >
+                                    <option value="-1">Select Free</option>
+                                    <option value="0"> Free</option>
+                                    <option value="1">Non-free</option>
+                                    
+                         
+                                </select>
+                                <span class="error-message text-danger"></span>
+                       
+                            </div> 
+                           
+                        </div>
+                        <div class="col-6">
+                            <div class="name input">
+                                  <label class="input-title select__title"> Select Course : </label>
+  
+                                  <select class="name  select-course" id="select-course" >
+                                      <option value="-1"> Select Course</option>
+                                      
+                                 
+                                  </select>
+                                  <span class="error-message text-danger"></span>
+                              </div> 
+                             
+                          </div>
+
+                           
+                            <div class="col-12">
+                                <div class="bottom-form">
+                           
+                                    <div class="submit-btn">
+                                        <input type="submit" id="create-session" class="btn btn-primary" value="Add new Session">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="home-content-latset-users">
+                        <div class="home-content-users-title">
+                            <span class="list-signup">List <span class="signup">Session</span></span>
+                        </div>
+                        <div class="home-content-users-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Course Name</th> 
+                                        <th>Session Title</th>
+                                        <th>Created Date</th>
+                                        <th>Time</th>
+                                        <th>Free </th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="list-sessions">
+                                <!-- list session -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+   
+    <script src="./../../vendor//FontAwesome5/all.min.js"></script>
+    <script src="./../../vendor/swalLocal/swal.js"></script>
+    <script src="./../../js/panel/sheared.js" type="module"></script>
+   <script src="./../../js/panel/sessions.js" type="module"></script>  
+</body>
+
+</html>

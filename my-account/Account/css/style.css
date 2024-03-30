@@ -1,0 +1,73 @@
+@import "./../../../css/default.css";
+@import "./../../../css/variables.css";
+@import "./../../../css/fonts.css";
+@import './../../../css/top-bar.css';
+@import "./../../../css/mainheader.css";
+@import "./../../../css/footer.css";
+
+
+
+.content-header {
+    border-top: 2px solid #2bce56;
+    border-bottom: 2px solid #2bce56;
+    padding: 1.7rem 0;
+}
+.content-header__title {
+    display: block;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+.content-header__subtitle {
+    font-size: 1.3rem;
+}
+
+.content-main {
+    margin: 3rem 0;
+}
+
+.sidebar__name {
+    color: var(--dark-color);
+    font-size: 1.7rem;
+}
+.sidebar__list {
+    margin-top: .7rem;
+}
+.sidebar__link {
+    display: block;
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.main {
+    border-left: 2px solid #2bce56;
+    padding-left: 3rem;
+}
+.main__title-text {
+    font-size: 1.7rem;
+}
+.main__title-name {
+    color: #2bce56;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.main__title-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.main__desc {
+    margin: 2.3rem 0 2rem 0;
+}
+.main__link {
+    display: block;
+    text-align: center;
+    padding: 1.5rem 0;
+    border: 1px solid #2bce56;
+    border-radius: .3rem;
+    margin-bottom: 1.5rem;
+    transition: all 400ms ease;
+}
+.main__link:hover {
+    background-color: #2bce56;
+    color: var(--white-color);
+}

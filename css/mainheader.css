@@ -1,0 +1,132 @@
+
+.main-header__content{
+     display: flex;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    align-items: center;
+}
+.main-header__right{
+display: flex;
+
+
+}
+.main-header__menu{
+    display: flex;
+}
+.main-header__logo{
+width: 7.5rem;
+height: 5rem;
+border-radius: 1rem;
+margin-right: 1rem;
+}
+.main-header__item{
+  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.main-header__link{
+    color: var(--dark-color);
+    transition: all 400ms ease;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    color: #7f8187;
+    display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+
+   
+}
+.main-header__link:hover {
+    color: #7f8187;
+  }
+  .main-header__link-icon {
+    margin-left: .8rem;
+  }
+  
+.main-header__dropwon{
+    position: absolute;
+    top: 5.5rem;
+    left: 0;
+    right: 0;
+    background-color: var(--white-color);
+    transition: all 200ms ease-in-out;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 0.5rem;
+    width: 20rem;
+    z-index: 1;
+    padding: 1rem 1rem;
+    border-bottom: 3px solid var(--primary-color);
+    opacity: 0;
+    visibility: hidden;
+}
+.main-header__item:hover .main-header__dropwon{
+    visibility: visible;
+    opacity: 1;
+    top: 5rem;
+  
+   
+    }
+.main-header__dropdown-item{
+    padding: .5rem 0;
+}
+.main-header__dropwon-link{
+    font-size: 1.4rem;
+    color: var(--dark-color);
+    transition: all 400ms ease;
+}
+.main-header__dropdown-link:hover {
+    color: #1e83f0;
+  }
+.main-header__left{
+display: flex;
+align-items: center;
+}
+.main-header__search-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.main-header__search-icon {
+    color: var(--white-color);
+    font-size: 2.2rem;
+}
+.main-header__search-icon:hover {
+    color: #1e83f0;
+    
+}
+.main-header__cart-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    margin: 0 1rem;
+}
+
+.main-header__profile{
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    transition: all 400ms ease;
+    color: var(--primary-color);
+    height: 4.3rem;
+}
+.main-header__profile:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+  }

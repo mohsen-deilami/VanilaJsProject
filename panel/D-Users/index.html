@@ -1,0 +1,154 @@
+
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="./../../vendor/FontAwesome5/all.min.css">
+    <link rel="stylesheet" href="./../../vendor/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./../style/style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="sidebar" class="col-2">
+           
+        </div>
+        <div id="home" class="col-10">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="home-header">
+                        <div class="home-right">       
+                            <div class="home-notification-modal">
+                                <ul class="home-notification-modal-list">
+                                 
+                                
+                                </ul>
+                            </div>  
+                            
+                            <div class="home-searchbar">
+                                <input type="text" class="search-bar" placeholder="Search...">
+                            </div>
+                            <div class="home-notification">
+                                <button type="button" id="notification-icon">
+                                    <i class="far fa-bell"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="home-left">
+                            <div class="home-profile">
+                                <div class="home-profile-image">
+                                    <a href="#">
+                                        <img  class="profile__img" alt="">
+                                    </a>
+                                </div>
+                                <div class="home-profile-name">
+                                    <a href="#" id="admin-name">  </a>
+                                </div>
+                                <div class="home-profile-icon">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid" id="home-content">
+                <div class="container">
+               
+                    <div class="home-content-edit active-edit-modal">
+                        <div class="home-title">
+                            <span>Add new User  </span>
+                        </div>
+                        <form class="form">
+                            <div class="col-6">
+                                <div class="name input">
+                                    <label class="input-title" >Name and Famili</label>
+                                    <input type="text" isValid="false" id="name" placeholder="Please enter username...">
+                                    <span class="error-message text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="family input">
+                                    <label class="input-title" >  Username </label>
+                                    <input type="text" isValid="false" id="username"
+                                        placeholder="Please enter username...">
+                                    <span class="error-message text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="email input">
+                                    <label class="input-title">Email</label>
+                                    <input type="text" isValid="false" id="email" placeholder="Please enter E-Mail...">
+                                    <span class="error-message text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="password input">
+                                    <label class="input-title">Pasword </label>
+                                    <input type="password" isValid="false" id="password"
+                                        placeholder="Please enter password...">
+                                    <span class="error-message text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="phone input">
+                                    <label class="input-title">Phone </label>
+                                    <input type="text" isValid="false" id="phone" placeholder="Please enter phone...">
+                                    <span class="error-message text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="bottom-form">
+                           
+                                    <div class="submit-btn">
+                                        <input type="submit" class="btn btn-primary" id="create-user" value="Add new User">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="home-content-latset-users">
+                        <div class="home-content-users-title">
+                      
+                            <span class="list-signup">List <span class="signup">Users</span></span>
+                        </div>
+                        <div class="home-content-users-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name And Famili</th> 
+                                        <th>Phone</th>
+                                        <th>Role</th>
+                                        <th>E-Mail</th>
+                                        <th>Ban </th>
+                                        <th>Change-Role</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="list-users">
+                                <!-- user menu -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+    <script src="./../../vendor//FontAwesome5/all.min.js"></script>
+    <script src="./../../vendor/swalLocal/swal.js"></script>
+    <script src="./../../js/panel/sheared.js" type="module"></script>
+   <script src="./../../js/panel/users.js" type="module"></script> 
+</body>
+
+</html>

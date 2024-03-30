@@ -1,0 +1,179 @@
+
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link rel="stylesheet" href="vendor/BootStrap/BootStrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <!--------------------------------  Header  -------------------------------->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container-fluid">
+              <div class="top-bar__content">
+                <div class="top-bar__right">
+                  <ul class="top-bar__menu">
+                    <!-- show top bar menu -->
+                  </ul>
+                </div>
+                <div class="top-bar__left">
+                  <div class="top-bar__email">
+                    
+                    <a href="/panel/main/index.html" class="top-bar__email-text top-bar__link" id="admin-panel">
+               Admin Panel
+               <i class="fa fa-user  top-bar__email-icon" aria-hidden="true"></i>
+              </a>
+                  </div>
+      
+                  <div class="top-bar__email">
+      
+                    <a href="#" class="top-bar__email-text top-bar__link" id="topbar-email">
+                 <!-- iformation get from index.js ==>getInfosIndex   -->
+                    </a>
+                    <i class="fas fa-envelope top-bar__email-icon"></i>
+                  </div>
+                  <div class="top-bar__phone">
+                    <a href="#" class="top-bar__phone-text top-bar__link" id="topbarPhone">
+               
+                    </a>
+                    <i class="fas fa-phone top-bar__phone-icon"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+    <div class="main-header">
+        <div class="container-fluid">
+          <div class="main-header__content">
+            <div class="main-header__right">
+              <img src="./../../images/logo/Logo.JPG" class="main-header__logo" alt="logo " />
+  
+              <ul class="main-header__menu">
+                <li class="main-header__item">
+                  <a href="./../../index.html" class="main-header__link">Home </a>
+                </li>
+  
+              </ul>
+            </div>
+  
+            <div class="main-header__left">
+              <a href="#" class="main-header__profile">
+                <!--  <span class="main-header__profile-text"> </span> -->
+              </a>
+              <a href="#" class="main-header__cart-btn">
+                <i class="fas fa-shopping-cart main-header__cart-icon"></i>
+              </a>
+              <a href="#" class="main-header__search-btn">
+                <i class="fas fa-search main-header__search-icon"></i>
+              </a>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--------------------------------  Header  -------------------------------->
+    <!--------------------------------  Content-Section  -------------------------------->
+    <section class="content">
+        <div class="content-header">
+            <div class="container">
+                <span class="content-header__title">My account</span>
+                <span class="content-header__subtitle">Counter</span>
+            </div>
+        </div>
+        <div class="content-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3" id="sidebar">
+                    
+                    </div>
+
+                    <div class="col-9">
+                        <div class="ticket">
+                            <div class="ticket-header">
+                                <span class="ticket-header__title">  All Tickets</span>
+                                <a class="ticket-header__link" href="./../Send-Ticket/index.html">  Send New Ticket</a>
+                            </div>
+                            <div class="ticket-boxes">
+                                <div class="ticket-boxes__item">
+                                    <img class="ticket-boxes__img img-fluid" src="images/ticket.svg">
+                                    <span class="ticket-boxes__condition">All</span>
+                                    <span class="ticket-boxes__value" id="all-ticket-box"> </span>
+                                </div>
+                                <div class="ticket-boxes__item ticket-boxes__closed ticket-boxes__custom">
+                                    <img class="ticket-boxes__img img-fluid" src="images/ticket.svg">
+                                    <span class="ticket-boxes__condition">Closed</span>
+                                    <span class="ticket-boxes__value ticket-boxes__value-closed" id="closed-ticket-box"> </span>
+                                </div>
+                                <div class="ticket-boxes__item ticket-boxes__answered ticket-boxes__custom">
+                                    <img class="ticket-boxes__img img-fluid" src="images/ticket.svg">
+                                    <span class="ticket-boxes__condition">Answered  </span>
+                                    <span class="ticket-boxes__value ticket-boxes__value-answered" id="answered-ticket-box"> </span>
+                                </div>
+                                <div class="ticket-boxes__item ticket-boxes__finished ticket-boxes__custom">
+                                    <img class="ticket-boxes__img img-fluid" src="images/ticket.svg">
+                                    <span class="ticket-boxes__condition">Completed </span>
+                                    <span class="ticket-boxes__value ticket-boxes__value-finished" id="completed-ticket-box"> </span>
+                                </div>
+                                <div class="ticket-boxes__item">
+                                    <img class="ticket-boxes__img img-fluid" src="images/ticket.svg">
+                                    <span class="ticket-boxes__condition">open</span>
+                                    <span class="ticket-boxes__value" id="open-ticket-box"> </span>
+                                </div>
+                            </div>
+                            <div class="ticket-filter">
+                                <form action="#" class="ticket-filter__form">
+                                    <select class="ticket-filter__select">
+                                        <option class="ticket-filter__option" value="">All</option>
+                                        <option class="ticket-filter__option" value=""> Send</option>
+                                        <option class="ticket-filter__option" value="">Recieve</option>
+                                    </select>
+                                    <select class="ticket-filter__select">
+                                        <option class="ticket-filter__option" value="">All</option>
+                                        <option class="ticket-filter__option" value="">Open</option>
+                                        <option class="ticket-filter__option" value="">Close</option>
+                                        <option class="ticket-filter__option" value=""> Answered </option>
+                                        <option class="ticket-filter__option" value="">Completed </option>
+                                    </select>
+                                    <select class="ticket-filter__select">
+                                        <option class="ticket-filter__option" value="">Date Answer </option>
+                                        <option class="ticket-filter__option" value="">Date Create </option>
+                                    </select>
+                                    <button class="ticket-filter__btn" type="submit">Submit</button>
+                                </form>
+                            </div>
+                            <div class="ticket-content">
+                                <span class="ticket-content__title"> </span>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------  Content-Section  -------------------------------->
+
+    <!--------------------------------  Footer-Section  -------------------------------->
+    <footer class="footer">
+      
+    </footer>
+    <!--------------------------------  Footer-Section  -------------------------------->
+
+    <script src="./../../vendor//FontAwesome5/all.min.js"></script>
+    <script src="./../../vendor/swalLocal/swal.js"></script>
+    <script src="./../../js/account/funcs/shared.js" type="module"></script>
+    <script src="./../../js/account/tickets.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="./../../vendor/swiperSlider/swiper.css" />
+    <link rel="stylesheet" href="./../../vendor/FontAwesome5/all.min.css">
+    <link rel="stylesheet" href="./../../vendor/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./../style/style.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="sidebar" class="col-2">
+       
+        </div>
+        <div id="home" class="col-10">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="home-header">
+                        <div class="home-right">       
+                            <div class="home-notification-modal">
+                                <ul class="home-notification-modal-list">
+                                 
+                                
+                                </ul>
+                            </div>  
+                          
+                            <div class="home-searchbar">
+                                <input type="text" class="search-bar" placeholder="Search...">
+                            </div>
+                            <div class="home-notification">
+                                <button type="button" id="notification-icon">
+                                    <i class="far fa-bell"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="home-left">
+                            <div class="home-profile">
+                                <div class="home-profile-image">
+                                    <a href="#">
+                                        <img  class="profile__img" alt="">
+                                    </a>
+                                </div>
+                                <div class="home-profile-name">
+                                    <a href="#" id="admin-name">  </a>
+                                </div>
+                                <div class="home-profile-icon">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="home-content">
+                <div class="home-content-edit active-edit-modal">
+                <div class="container">
+                    <div class="home-content-title">
+                        <span class="welcome">Wellcome,<span class="name" id="admin-welcome-name"> </span></span>
+                    </div>
+                    <div class="home-content-boxes">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="home-content-revanue box">
+                                    <div class="home-box">
+                                        <div class="home-box-right">
+                                            <div class="home-box-title">
+                                                <span id="box-title-left"></span>
+                                            </div>
+                                            <div class="home-box-icon">
+                                                <i class="fas fa-money-bill-alt"></i>
+                                            </div>
+
+                                        </div>
+                                        <div class="home-box-left">
+                                           
+                                            <div class="home-box-value">
+                                                
+                                                <div class="home-box-result">
+                                                    <span></span>
+                                                </div>
+                                                <div class="home-box-price">
+                                                    <span>$2,420</span>
+                                                </div>
+                                            </div>
+                                            <div class="home-box-text">
+                                                <span>Income in the last month</span>
+                                            </div>
+                                         
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="home-content-sales box">
+                                    <div class="home-box">
+                                        <div class="home-box-right">
+                                            <div class="home-box-title">
+                                                <span>Sale</span>
+                                            </div>
+                                            <div class="home-box-icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-box-left">
+                                           
+                                            <div class="home-box-value">
+                                                
+                                                <div class="home-box-result">
+                                                    <span>+5.2%</span>
+                                                </div>
+                                                <div class="home-box-price">
+                                                    <span>$2,420</span>
+                                                </div>
+                                            </div>
+                                            <div class="home-box-text">
+                                                <span>Sale in the last month</span>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="home-content-cost box">
+                                    <div class="home-box">
+                                        
+                                        <div class="home-box-right">
+                                            <div class="home-box-title">
+                                                <span>Cost</span>
+                                            </div>
+                                            <div class="home-box-icon">
+                                                <i class="fas fa-money-bill-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-box-left">
+                                           
+                                            <div class="home-box-value">
+                                                
+                                                <div class="home-box-result">
+                                                    <span>+5.2%</span>
+                                                </div>
+                                                <div class="home-box-price">
+                                                    <span>$2,420</span>
+                                                </div>
+                                            </div>
+                                            <div class="home-box-text">
+                                                <span>Cost in the last month</span>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-content-chart">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <div id="sale-chart"></div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div id="revanue-chart"></div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div id="cost-chart"></div>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                    </div>
+                    <div class="home-content-latset-users">
+                        <div class="home-content-users-title">
+                            <span class="list-signup"> People recently<span class="signup"> Registered </span></span>
+                        </div>
+                        <div class="home-content-users-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th> Number</th>
+                                        <th>E-Mail</th>
+                                        <th>Role</th>
+                                        <th>Created </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="last-register-wrapper">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./../../vendor/FontAwesome5/all.min.js"></script>
+    <script src="./../../vendor/swalLocal/swal.js"></script>
+    <script src="./../../vendor/SwiperSlider/swiper.js"></script>
+    <script src="./../../js/panel/custom.js"></script>
+    <script src="./../../js/panel/sheared.js" type="module"></script>
+    <script src="./../../js/panel/index.js"  type="module"></script>
+</body>
+
+</html>

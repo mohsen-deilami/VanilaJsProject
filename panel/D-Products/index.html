@@ -1,0 +1,200 @@
+
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="./../../vendor/FontAwesome5/all.min.css">
+    <link rel="stylesheet" href="./../../vendor/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./../style/style.css">
+  
+</head>
+
+<body>
+    <div id="content">
+        <div id="sidebar" class="col-2">
+           
+        </div>
+        <div id="home" class="col-10">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="home-header">
+                        <div class="home-right">       
+                            <div class="home-notification-modal">
+                                <ul class="home-notification-modal-list">
+                                 
+                                
+                                </ul>
+                            </div>  
+                         
+                            <div class="home-searchbar">
+                                <input type="text" class="search-bar" placeholder="Search...">
+                            </div>
+                            <div class="home-notification">
+                                <button type="button" id="notification-icon">
+                                    <i class="far fa-bell"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="home-left">
+                            <div class="home-profile">
+                                <div class="home-profile-image">
+                                    <a href="#">
+                                        <img  class="profile__img" alt="">
+                                    </a>
+                                </div>
+                                <div class="home-profile-name">
+                                    <a href="#" id="admin-name">  </a>
+                                </div>
+                                <div class="home-profile-icon">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="home-content">
+                <div class="container">
+                    <div class="home-content-edit active-edit-modal">
+                    <div class="home-title">
+                        <span>  Add new Course</span>
+                    </div>
+                    <form class="form">
+                        <div class="col-6">
+                            <div class="name input">
+                                <label class="input-title">Course name </label>
+                                <input type="text" isValid="false" id="name" placeholder="Please enter the Course name..">
+                                <span class="error-message text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="number input">
+                                <label class="input-title">Course description </label>
+                                <textarea  id="description" class="w-100" cols="30" rows="10" placeholder="Please enter the Course describe.." ></textarea>
+                                    
+                                <span class="error-message text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="name input">
+                                <label class="input-title">Course URL </label>
+                                <input type="text" isValid="false" id="shortName" placeholder="Please enter the Course shortName..">
+                                <span class="error-message text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="name input">
+                                <label class="input-title"> categoryID </label>
+
+                                <select class="name  selectCategory" id="selectCategory" >
+                                    <option value="-1">Select Category</option>
+                                    
+                                  <!-- option from backend -->
+                                </select>
+                                <span class="error-message text-danger"></span>
+                            </div> 
+                           
+                        </div>
+                        <div class="col-6">
+                            <div class="price input">
+                                <label class="input-title">Price </label>
+                                <input type="text" isValid="false" id="price" placeholder="Please enter the Course price...">
+                                <span class="error-message text-danger"></span>
+                            </div>
+                        </div>
+                      
+                        <div class="col-6">
+                            <div class="file">
+                                <label class="input-title">Image </label>
+                                <input type="file" id="file">
+                            </div>
+                        </div>
+                        <div class="col-6">
+
+                            <div class="price input">
+                                <label class="input-title">support </label>
+                                <input type="text" isValid="false" id="support" placeholder="Please enter  type of support...">
+                                <span class="error-message text-danger"></span>
+                            </div>
+
+                            
+                        </div>
+                        
+                        <div class="col-6">
+                            <div class="presell">
+                                <label class="input-title">Status </label>
+                                <div class="radios">
+                                    <div class="presell-true">
+                                        <label>
+                                            <input type="radio" value="presell" name="status" checked id="presell">
+                                            <span>Presell </span>
+                                        </label>
+                                    </div>
+                                    <div class="presell-false">
+                                        <label>
+                                            <input type="radio" value="start" name="status" id="start">
+                                            <span>Start  </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="submit-btn">
+                                <input type="submit" class="btn btn-primary" id="create-course-btn" value="Add New Course">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+            
+            <div class="container-fluid" id="home-content">
+                <div class="container">
+                    <div class="home-content-products">
+                        <div class="home-content-products-title">
+                            <span class="list-signup">List <span class="signup">Produckt</span></span>
+                        </div>
+                        <div class="home-content-products-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <input type="checkbox" class="checkbox-table form-check-input">
+                                        </th>
+                                        <th>ID</th>
+                                        <th>Produckt Name </th>
+                                        <th>Price</th>
+                                        <th>Registered</th>
+                                        <th>Support</th>
+                                        <th>Category</th>
+                                        <th>Score</th>
+                                        <th>Status</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="listCoursesTable">
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <script src="./../../vendor/FontAwesome5/all.min.js"></script>
+    <script src="./../../vendor/swalLocal/swal.js"></script>
+    <script src="./../../js/panel/sheared.js" type="module"></script>
+    <script src="./../../js/panel/courses.js" type="module"></script>
+</body>
+
+
+</html>

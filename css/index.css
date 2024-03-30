@@ -1,0 +1,50 @@
+@import "./default.css";
+@import "./variables.css";
+@import "./fonts.css";
+@import './top-bar.css';
+@import "./mainheader.css";
+@import "./landing.css";
+@import "./courses.css";
+@import "./about-us.css";
+@import "./article.css";
+@import "./footer.css";
+
+
+.courses-box__discount {
+    position: absolute;
+    left: -.7rem;
+    top: 1rem;
+    background-color: #2bce56;
+    padding: .3rem 1.3rem;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    border-radius: .5rem;
+    transform: translateY(-0.6rem) rotate(-10deg);
+    
+    transition: all 400ms ease;
+  }
+  
+  
+  .course-box:hover .courses-box__discount{
+    transform: rotate(0deg);
+  }
+  .courses-box__price-discount {
+    color: #2bce56 !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+  .courses-box__undiscount {
+    font-size: 1.4rem;
+    position: relative;
+  }
+  .courses-box__undiscount::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(117, 117, 117);
+    right: 0;
+    z-index: 999;
+    top: 1rem;
+  }

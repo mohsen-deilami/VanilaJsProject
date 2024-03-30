@@ -1,0 +1,12 @@
+@import "./default.css";
+@import "./variables.css";
+@import "./fonts.css";
+@import './top-bar.css';
+@import "./mainheader.css";
+@import "./landing.css";
+@import "./courses.css";
+@import "./about-us.css";
+@import "./article.css";
+@import "./footer.css";
+@import "./pagination.css";
+

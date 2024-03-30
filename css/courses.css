@@ -1,0 +1,117 @@
+.courses{
+    margin: 3rem 0;
+}
+
+
+/* course-box main start */
+.course-box {
+    background-color: var(--white-color);
+    box-shadow: 0 0 19px rgba(168, 172, 185, 0.3);
+    border-radius: 1rem;
+    margin: 2rem 0;
+    transition: all 400ms ease;
+    position: relative;
+  }
+.courses-box__discount {
+    position: absolute;
+    left: 0;
+    top: 1.1rem;
+    background-color: #2bce56;
+    padding: .3rem 1.3rem;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    border-radius: .5rem;
+    transform: translateY(-0.6rem) rotate(-10deg);
+    z-index: 999;
+    transition: all 400ms ease;
+  }
+  
+  .course-box__rating-teacher {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.course-box:hover{
+transform: translateY(-.6rem);
+}
+.course-box__img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    height: 16rem;
+}
+.course-box__main{
+ 
+    padding: 1.5rem;
+}
+.course-box__title{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.course-box__raiting-teacher{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.course-box__teacher{
+  margin: 1rem 0 .5rem 0;
+    display: flex;
+    align-items: center;
+  
+}
+.course-box__teacher-icon{
+    margin-right: .6rem;
+}
+.course-box__teacher-link:hover{
+    cursor: pointer;
+}
+.course-box__raiting{
+    display: flex;
+}
+.course-bos__status{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0 .5rem 0;
+}
+.course-box__footer{
+    text-align: center;
+    padding: 1.3rem 0;
+    border-top: 1px solid #e8e8e8;
+}
+.course-box__footer-link {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+.course-box__price{
+    color: #9c9c9c;
+  font-size: 1.8rem;
+}
+
+.popular, .presell {
+    margin: 5rem 0;
+  }
+  
+  .popular__slider .course-box, 
+  .presell__slider .course-box {
+    margin: 0 1.3rem;
+    box-shadow: 0 0 10px rgba(168, 172, 185, 0.3);
+  
+  }
+  
+  .popular__slider .course-box:hover,
+   .presell__slider .course-box:hover {
+    transform: none;
+  }
+  
+  .presell__slider, .popular__slider {
+    margin: 4rem 0;
+    position: relative;
+  }
+  .popular-course__container{
+    padding-bottom: 10px;
+  }
+/* course-box main finish */
+

@@ -1,0 +1,32 @@
+.paganation{
+      margin: 3rem 0;
+}
+.pagination-list{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.pagination__link{
+    background-color: #f0f0f1;
+    margin: 0 .5rem;
+    width: 4rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    transition: all 400ms ease;
+    
+}
+.pagination__link:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination__link-active{
+    background-color: var(--primary-color);
+
+}
